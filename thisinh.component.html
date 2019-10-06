@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Trang chủ</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <img src="./assets/dulieu/Tainguyen/images/banner.bng">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Trang chủ</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/app/BTAssignment/thisinh/thisinh.component.html">Thí sinh</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/app/BTAssignment/thongtin/thongtin.component.html">Thi thử</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gợi ý</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Liên hệ</a>
+                    </li>
+
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Tài khoản
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Thông tin cá nhân</a>
+                            <a class="dropdown-item" href="#">Cài đặt</a>
+                            <a class="dropdown-item" href="/app/BTAssignment/dangky/dangky.component.html">Đăng ký</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Đăng nhập</a>
+                        </div>
+                    </li>
+                </form>
+            </div>
+        </nav>
+
+
+        <div class="row">
+            <col-8>
+                <div class="container row">
+                    <col-4>
+                        <p>Tên đăng nhập: {{danhsach.username}}</p>
+                        <p>Password: {{danhsach.password}}</p>
+                        <p>Họ và tên: {{danhsach.fullname}}</p>
+                        <P>Số: {{danhsach.gender}}</P>
+                        <p>Email: {{danhsach.email}}</p>
+                        <p>Ngày sinh: {{danhsach.birthday}}</p>
+                        <p>Trường: {{danhsach.schoolfee}}</p>
+                        <p>Số hiện: {{danhsach.marks}}</p>
+                    </col-4>
+                    <col-4>
+                        <p>Tên đăng nhập: {{danhsach.username}}</p>
+                        <p>Password: {{danhsach.password}}</p>
+                        <p>Họ và tên: {{danhsach.fullname}}</p>
+                        <P>Số: {{danhsach.gender}}</P>
+                        <p>Email: {{danhsach.email}}</p>
+                        <p>Ngày sinh: {{danhsach.birthday}}</p>
+                        <p>Trường: {{danhsach.schoolfee}}</p>
+                        <p>Số hiện: {{danhsach.marks}}</p>
+                    </col-4>
+                    <col-4>
+                        <p>Tên đăng nhập: {{danhsach.username}}</p>
+                        <p>Password: {{danhsach.password}}</p>
+                        <p>Họ và tên: {{danhsach.fullname}}</p>
+                        <P>Số: {{danhsach.gender}}</P>
+                        <p>Email: {{danhsach.email}}</p>
+                        <p>Ngày sinh: {{danhsach.birthday}}</p>
+                        <p>Trường: {{danhsach.schoolfee}}</p>
+                        <p>Số hiện: {{danhsach.marks}}</p>
+                    </col-4>
+                </div>
+
+            </col-8>
+            <col-4>
+
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Danh mục
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">SQL Server</li>
+                                    <li class="list-group-item">Điện toán đám mây</li>
+                                    <li class="list-group-item">Lập trình PHP</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Thông tin môn
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">SQL Server</li>
+                                    <li class="list-group-item">Điện toán đám mây</li>
+                                    <li class="list-group-item">Lập trình PHP</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Cơ chế
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">SQL Server</li>
+                                    <li class="list-group-item">Điện toán đám mây</li>
+                                    <li class="list-group-item">Lập trình PHP</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </col-4>
+        </div>
+
+    </div>
+</body>
+
+</html>
